@@ -1,0 +1,133 @@
+.contact-sec1{
+    background: linear-gradient(to right bottom in oklab, rgb(14, 68, 128) 0%, rgb(17, 83, 155) 50%, rgb(11, 47, 90) 100%);
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.get-in-touch{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-image{
+    background-color: white;
+    border-radius: 30px;
+}
+
+.touch{
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    justify-content: start;
+    background-color: oklab(0.999994 0.0000455678 0.0000200868 / 0.1);
+    border-bottom: 1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.2);
+    border-top: 1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.2);
+    border-left: 1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.2);
+    border-right: 1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.2);
+    backdrop-filter: blur(8px);
+    color: rgb(217, 232, 249);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-top: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: fit-content;
+}
+
+.contact-content h1{
+    color: white;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 32px;
+} 
+
+.contact-content p{
+    color: rgb(217, 232, 249);
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500px;
+}
+
+.contact-sec2{
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.mail-contact{
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items:center;
+    border-top: 1px solid oklch(0.929 0.013 255.508);
+    border-bottom: 1px solid oklch(0.929 0.013 255.508);
+    border-left: 1px solid oklch(0.929 0.013 255.508);
+    border-right: 1px solid oklch(0.929 0.013 255.508);
+    border-radius: 10px;
+    padding-top: 28px;
+    padding-bottom: 58px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.contact-icon{
+    background: linear-gradient(to right bottom, rgb(42, 123, 212) , rgb(17, 83, 155));
+    border-top: 0px solid rgb(255 255 255);
+    border-bottom: 0px solid rgb(255 255 255);
+    border-left: 0px solid rgb(255 255 255);
+    border-right: 0px solid rgb(255 255 255);
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 56px;
+    width: 56px;
+    justify-content: center;
+    line-height: 24px;
+    border-radius: 12px;
+    font-size: 25px;
+}
+
+.contact-grid h2{
+    color: oklch(0.208 0.042 265.755);
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.grid-mail{
+    color: rgb(21, 104, 194);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+

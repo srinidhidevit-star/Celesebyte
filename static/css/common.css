@@ -1,0 +1,353 @@
+.Navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-logo{
+    color: #135091;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    margin: 0;
+}
+
+.nav-items li {
+    padding: 0;
+    white-space: nowrap;
+}
+
+.nav-items li a {
+    display: block;
+    font-size: 16px;
+    color: grey;
+    padding: 10px 15px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-items li a.nav-btn {
+    background-color: rgb(21, 104, 194);
+    color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-left-style: solid;
+    border-right-color: rgb(255, 255, 255);
+    border-right-style: solid;
+    border-top-color: rgb(255, 255, 255);
+    border-top-style: solid;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-style: solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.nav-items li a.nav-btn:hover{
+    background-color: rgba(19, 80, 145);
+    color: rgb(255, 255, 255);
+    transform: translateY(-5px);
+}
+
+.nav-items li a:hover{
+    background-color: #72b2f7;
+    color: #135091;
+    border-radius: 10px;
+}
+
+.nav-items li a.active{
+    color: rgb(21, 104, 194);
+}
+
+/* Hamburger menu */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #135091;
+    font-size: 27px;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+footer{
+    background-color: rgb(8, 29, 56);
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.sec10-whole{
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec10-grids{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.sec10-grid1{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec10-grid1 h3{
+    font-size: 18px;
+    color: white;
+}
+
+.sec10-grid1 p{
+    color: oklch(0.704 0.04 256.788);
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.sec10-grid1 span{
+    color: rgb(128, 179, 234);
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.sec10-grid2{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    
+}
+
+.sec10-grid2 h3{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.sec10-grid2 ul{
+    list-style-type: none;
+    list-style-position: outside;
+    display: block;
+    padding: 0;
+}
+
+.sec10-grid2 li a{
+    /* list-style-position: inside; */
+    cursor: pointer;
+    color: oklch(0.704 0.04 256.788);
+    font-size: 14px;
+    padding-bottom: 10px;
+    line-height: 24px;
+    list-style-type: none;
+    list-style-position: outside;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: 0.15s;
+    margin-top: 3%;
+}
+
+.sec10-grid2 li a:hover{
+    /* list-style-position: inside; */
+    cursor: pointer;
+    color: white;
+}
+
+.sec10-grid3{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.sec10-grid3 h3{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.gmail{
+    list-style-type: none;
+    list-style-position: outside;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.gmail i{
+    padding-right: 10px;
+    color: rgb(77, 148, 224);
+}
+
+.gmail p{
+    color: oklch(0.704 0.04 256.788);
+    font-size: 14px;
+}
+
+.copyrights{
+    color: oklch(0.554 0.046 257.417);
+    font-size: 14px;
+    padding-top: 3%;
+    border-top: 1px solid oklch(0.554 0.046 257.417);
+    width: 100%;
+    text-align: center;
+}
+
+/* =================================
+   TABLET RESPONSIVE DESIGN
+   768px - 1024px
+================================= */
+
+@media screen and (max-width: 1024px) {
+    /* Navbar */
+    /* .nav-logo {
+        margin-left: 2%;
+    } */
+
+    .nav-logo h1 {
+        font-size: 26px;
+    }
+
+    .nav-items {
+        margin-right: 1%;
+        padding: 5px;
+    }
+
+    .nav-items li a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .nav-btn {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+    /* Footer */
+    .sec10-grids {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* =================================
+   MOBILE RESPONSIVE DESIGN
+   480px - 767px
+================================= */
+
+@media screen and (max-width: 767px) {
+    .Navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5%;
+        box-sizing: border-box;
+    }
+
+    .nav-logo {
+        margin-left: 0;
+    }
+
+    .nav-logo h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+        order: 2;
+    }
+
+    .Navbar nav {
+        order: 3;
+    }
+
+    .nav-items {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        margin: 0;
+        padding: 15px 0;
+        gap: 15px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-items.active {
+        display: flex;
+    }
+
+    .nav-items li {
+        list-style: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-items li a {
+        display: block;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .nav-btn {
+        margin: 0;
+        font-size: 13px;
+    }
+    /* Footer */
+    .sec10-whole {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* Footer on mobile */
+    .sec10-grids {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .sec10-grid1 p,
+    .sec10-grid2 li a,
+    .gmail p {
+        font-size: 12px;
+    }
+
+    .copyrights {
+        font-size: 12px;
+    }
+}
